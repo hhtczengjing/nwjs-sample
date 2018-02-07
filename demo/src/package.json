@@ -1,0 +1,33 @@
+{
+  "name": "demo",
+  "main": "views/main.html",
+  "domain": "localhost",
+  "version": "1.0.0",
+  "description": "示例",
+  "window": {
+    "title": "示例",
+    "width": 320,
+    "height": 400,
+    "max_width": 320,
+    "max_height": 400,
+    "min_width": 320,
+    "min_height": 400,
+    "as_desktop": true,
+    "resizable": false,
+    "show_in_taskbar": true,
+    "icon": "icon.png"
+  },
+  "webview": {
+    "partitions": [
+      {
+        "name": "trusted",
+        "accessible_resources": [
+          "<all_urls>"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  }
+}

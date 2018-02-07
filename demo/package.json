@@ -1,0 +1,12 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "devDependencies": {
+    "nw": "^0.26.6",
+    "nw-builder": "^3.5.1"
+  },
+  "scripts": {
+    "dev": "nw src/",
+    "prod": "nwbuild --platforms win32,win64,osx64 --buildDir dist/ src/"
+  }
+}
